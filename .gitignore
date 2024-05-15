@@ -1,2 +1,4 @@
+data.db
 *.db
-static/*
+# static/*
+
