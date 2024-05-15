@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Visualization</title>
+</head>
+<body>
+    <h1>Monthly Sales Visualization</h1>
+    <p>{{ KPIs[0] }}</p>
+    <p>{{ KPIs[1] }}</p>
+    <p>{{ KPIs[2] }}</p>
+    <img src="data:image/png;base64,{{ Sales_month_img }}" alt="Monthly Sales">
+    <img src="data:image/png;base64,{{ Sales_PreviousYear }}" alt="Previous Year Sales">
+    <img src="{{ url_for('static', filename=img3) }}" alt="Sales Distribution by Category">
+</body>
+</html>
