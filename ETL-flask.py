@@ -37,7 +37,7 @@ def init_db():
 def index():
     paths = []
     # Extract
-    df = pd.read_excel('/Users/gurmindersingh/Downloads/Adv.xlsx')
+    df = pd.read_excel('/Path/to/file.xlsx')
 
     # Add a 'YEAR_MONTH' column by extracting year and month from 'OrderDate'
     df['YEAR_MONTH'] = df['OrderDate'].apply(lambda x: x.strftime('%Y-%m'))
